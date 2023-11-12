@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" modified="2023-11-12T10:47:23.377Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0" etag="Gm28G_AcGiFrU_5y4n_3" version="22.1.0" type="github">
+  <diagram name="Page-1" id="H01qffEKPcRhHBk7UTEL">
+    <mxGraphModel dx="1059" dy="616" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-10" value="Käyttäjä" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="22" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-11" value="&lt;div&gt;Cipherer&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="22" y="411" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-15" target="PimdjZ6zKHFd7U6tgaEE-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-15" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="142" y="202.25" width="35.5" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-16" target="PimdjZ6zKHFd7U6tgaEE-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-16" target="PimdjZ6zKHFd7U6tgaEE-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-16" value="&lt;div&gt;Put in input&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215.25" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-18" target="PimdjZ6zKHFd7U6tgaEE-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-18" value="Get Ciphered input" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415.25" y="142.25" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-20" target="PimdjZ6zKHFd7U6tgaEE-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-20" target="PimdjZ6zKHFd7U6tgaEE-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="502" y="285" />
+              <mxPoint x="502" y="494" />
+              <mxPoint x="428" y="494" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-20" value="&lt;div&gt;Get control key&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="415.25" y="225" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-22" value="&lt;div&gt;Ciphering&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="82" y="47" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-23" target="PimdjZ6zKHFd7U6tgaEE-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-23" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="142" y="423.25" width="35.5" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-24" target="PimdjZ6zKHFd7U6tgaEE-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-24" value="Get input" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215.25" y="411" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-26" target="PimdjZ6zKHFd7U6tgaEE-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-26" target="PimdjZ6zKHFd7U6tgaEE-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-26" value="Generate control key that chooses the table" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="368" y="411" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-29" target="PimdjZ6zKHFd7U6tgaEE-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-29" target="PimdjZ6zKHFd7U6tgaEE-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-29" value="&lt;div&gt;Print output,&amp;nbsp;&lt;/div&gt;&lt;div&gt;ciphered text &amp;amp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;control key&lt;/div&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="601" y="174" width="142" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-32" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="795" y="196" width="36" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-34" target="PimdjZ6zKHFd7U6tgaEE-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-34" value="Generate ciphered output based on control key" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="514" y="411" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-36" target="PimdjZ6zKHFd7U6tgaEE-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-36" value="Print output" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="401" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-39" value="&lt;div&gt;Background operations&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="22" y="587" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-42" target="PimdjZ6zKHFd7U6tgaEE-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-42" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="142" y="599.25" width="35.5" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-43" target="PimdjZ6zKHFd7U6tgaEE-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-43" value="Generate control key" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="368" y="587" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PimdjZ6zKHFd7U6tgaEE-47" target="PimdjZ6zKHFd7U6tgaEE-49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="508" y="701" />
+              <mxPoint x="508" y="622" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-47" value="Based on the generation, chooses the cipher table" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="368" y="671" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-49" value="Cipher the input based on the table" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="535.25" y="587" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-51" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="22" y="104" width="916" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-52" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="22" y="338" width="916" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="PimdjZ6zKHFd7U6tgaEE-57" value="" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="PimdjZ6zKHFd7U6tgaEE-52">
+          <mxGeometry x="792" y="85.25" width="36" height="36" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
