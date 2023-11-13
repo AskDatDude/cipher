@@ -4,18 +4,22 @@ function calculate(){
   console.log(inputArray);
   let encryptedText = encrypt(inputArray, key1, key2);
   console.log(encryptedText);
+  document.getElementById("output").innerHTML = encryptedText;
   return encryptedText;
 }
-
+//key1 on aakkosjärjesteksysessä. Ohjelma etsii aina key1 kunkin merkin kaverin, ja sille vastaavan parin jostain muusta avaimesta. Toistaiseksi vain key2 käytössä.
+//täytyy kirjoittaa useampia avaimia, tehdä functio joka randomoi sen mitä niistä käytetään ja korvata näissä käytetty key2 sillä randomoidulla vaihtoehdolla. Muuten se pumppaa aina key2 vastaukseksi.
+//täytyy pohtia miten decryptaus onnistuu, jotenkin samalla tavalla kuin tämä, mutta toisinpäin.
 function encrypt(inputArray, key1, key2){
   let encryptedArray = [];
   for (let i = 0; i < inputArray.length; i++){
     let currentCharacter = inputArray[i];
     let indexInKey1 = key1.indexOf(currentCharacter);
+    //katsoo onko merkki key1 ja korvaa sen
     if (indexInKey1 !== -1) {
       encryptedArray.push(key2[indexInKey1]);
     } else {
-      // If the character is not in key1, leave it unchanged
+      //jos merkki ei ole key1 se ei muutu
       encryptedArray.push(currentCharacter);
     }
   }
