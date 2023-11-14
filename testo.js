@@ -18,10 +18,8 @@ const avain8 = ['0', 's', '@', 'D', 'o', 'J', 'H', 'd', '4', 'g', '#', 'K', ';',
 
 const avain9 = ['Y', '~', '?', '-', '2', '1', 'ö', 'ä', '%', '@', '>', 'L', 'a', 'V', 'b', '.', '`', 'D', 'k', '=', '{', ';', ')', 'n', '*', 'Ä', 'r', 'Å', 'A', 't', 'B', 'H', '#', 'W', 'f', 'd', '^', 'O', ',', '9', 'å', 'N', '!', '3', '7', 'e', 'E', 'o', '/', '$', 'y', '<', '0', '8', '(', 'z', 'q', 'g', '4', "'", 'c', ']', 'S', '}', '&', 'l', 'p', 'I', ':', 'x', '_', 'w', 'T', 'h', 'C', 'Q', '6', 'F', '+', '"', 'P', 'M', 'j', 'Ö', 'u', '[', 'i', 'G', 'v', 'U', 's', 'X', 'Z', 'R', 'K', 'J', '5', 'm'];
 
-//let keyList = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 let keyList = [avain0, avain1, avain2, avain3, avain4, avain5, avain6, avain7, avain8, avain9]
 
-//Durstenfeld shuffle
 shuffleKey(keyList);
 function shuffleKey(keyList) {
   for (let i = keyList.length - 1; i > 0; i--) {
@@ -31,12 +29,83 @@ function shuffleKey(keyList) {
     keyList[j] = temp;
   }
 }
-//console.log(keyList[1], keyList[2]);
+console.log(keyList[1], keyList[2]);
 
 let key1 = keyList[1];
 let key2 = keyList[2];
 
-//TO DO keksi miten syötteeseen voi printata sen mitä avaimia käytettiin (decryptausta varten)
+let userKey1 = getKey1Number(keyList[1]);
+getKey1Number(keyList[1]);
+function getKey1Number(){
+  if(keyList[1] == avain0){
+    return "0"
+  }
+  else if(keyList[1] == avain1){
+    return "1"
+  }
+  else if(keyList[1] == avain2){
+    return "2"
+  }
+  else if(keyList[1] == avain3){
+    return "3"
+  }
+  else if(keyList[1] == avain4){
+    return "4"
+  }
+  else if(keyList[1] == avain5){
+    return "5"
+  }
+  else if(keyList[1] == avain6){
+    return "6"
+  }
+  else if(keyList[1] == avain7){
+    return "7"
+  }
+  else if(keyList[1] == avain8){
+    return "8"
+  }
+  else if(keyList[1] == avain9){
+    return "9"
+  }
+}
+let userKey2 = getKey2Number(keyList[2]);
+getKey2Number(keyList[2]);
+function getKey2Number(){
+  if(keyList[2] == avain0){
+    return "0"
+  }
+  else if(keyList[2] == avain1){
+    return "1"
+  }
+  else if(keyList[2] == avain2){
+    return "2"
+  }
+  else if(keyList[2] == avain3){
+    return "3"
+  }
+  else if(keyList[2] == avain4){
+    return "4"
+  }
+  else if(keyList[2] == avain5){
+    return "5"
+  }
+  else if(keyList[2] == avain6){
+    return "6"
+  }
+  else if(keyList[2] == avain7){
+    return "7"
+  }
+  else if(keyList[2] == avain8){
+    return "8"
+  }
+  else if(keyList[2] == avain9){
+    return "9"
+  }
+}
+//console.log(getKey1Number(keyList[1]));
+//console.log(getKey2Number(keyList[2]));
+
+let userKey = userKey1.toString() + userKey2.toString()
 
 function calculate() {
   let textInput = document.getElementById("textInput").value;
@@ -44,10 +113,11 @@ function calculate() {
   //console.log(inputArray);
   let encryptedText = encrypt(inputArray, key1, key2);
   //console.log(encryptedText);
-  document.getElementById("output").innerHTML = encryptedText;
+  document.getElementById("output").innerHTML = encryptedText +"<br>Decryption key is: " + userKey;
 }  
 
 //TO DO täytyy pohtia miten decryptaus onnistuu, jotenkin samalla tavalla kuin tämä, mutta toisinpäin.
+
 function encrypt(inputArray, key1, key2) {
   let encryptedArray = [];
   for (let i = 0; i < inputArray.length; i++) {
