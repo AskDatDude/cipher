@@ -1,0 +1,33 @@
+/*placeholder font, color*/
+body {
+font-family: "Helvetica", Sans-Serif; 
+background-color: rgb(18, 18, 18);
+color: rgb(210, 210, 210);
+text-align: center;
+}
+
+button {
+width: 10em;
+height: 2.5em;
+max-width: 100%;
+font-size: 1vw;
+}
+
+input {
+width: 20em;
+height: 2.5em;
+max-width: 100%;
+font-size: 1vw;
+}
+
+h1 {
+font-size: 2.5vw;
+}
+
+h2 {
+font-size: 1.5vw;
+}
+
+p, #output {
+font-size: 1vw;
+}
