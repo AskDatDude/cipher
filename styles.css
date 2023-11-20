@@ -1,33 +1,119 @@
-/*placeholder font, color*/
-body {
-font-family: "Helvetica", Sans-Serif; 
-background-color: rgb(18, 18, 18);
-color: rgb(210, 210, 210);
-text-align: center;
+* {
+    font-family: "Helvetica", Sans-Serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-button {
-width: 10em;
-height: 2.5em;
-max-width: 100%;
-font-size: 1vw;
+@media screen and (min-width: 340px) {
+
+    /*placeholder font, color*/
+    body {
+        background-color: rgb(18, 18, 18);
+        color: rgb(210, 210, 210);
+        margin: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    input {
+        width: 20em;
+        height: 30px;
+        max-width: 100%;
+        font-size: 16px;
+        text-align: top;
+    }
+
+    #deCryptKeyInput  {
+        width: 100px;
+        height: 30px;
+        max-width: 100%;
+        text-align: start;
+        font-size: 18px;
+    }
+
+    #deCryptTextInput {
+        width: 450px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    #textInput {
+        width: 400px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p,
+    #output {
+        font-size: 16px;
+    }
 }
 
-input {
-width: 20em;
-height: 2.5em;
-max-width: 100%;
-font-size: 1vw;
+@media screen and (min-width: 768px) {
+
+    body {
+        margin: 0 20% 0 20%;
+        text-align: start;
+    }
+
+    #deCryptKeyInput  {
+        width: 100px;
+        height: 30px;
+        max-width: 100%;
+    }
+
+    #deCryptTextInput {
+        width: 450px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    #textInput {
+        width: 400px;
+        height: 300px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin: 0 0 20px 0;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 0 0 10px 10px;
+    }
+
+    p,
+    #output {
+        font-size: 16px;
+    }
+
 }
 
-h1 {
-font-size: 2.5vw;
+@media screen and (min-width: 1280px) {
+
+
 }
 
-h2 {
-font-size: 1.5vw;
+@media screen and (min-width: 1920px) {
+
+
 }
 
-p, #output {
-font-size: 1vw;
-}
