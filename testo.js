@@ -132,8 +132,9 @@ function encrypt(inputArray, key1, key2) {
     }  
   }  
   return encryptedArray.join("");
-}
+}  
 
+//kattoo käyttäjän avainnumeron, Purkaa se yksittäisiksi merkeiksi, muuttaa ne avaimeksi. 
 
 
 
