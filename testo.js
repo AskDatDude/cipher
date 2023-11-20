@@ -132,7 +132,7 @@ function encrypt(inputArray, key1, key2) {
     }  
   }  
   return encryptedArray.join("");
-}  
+}
 
 
 
