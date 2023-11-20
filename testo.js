@@ -118,7 +118,7 @@ function encrypt(inputArray, key1, key2) {
     let currentCharacter = inputArray[i];
     let indexInKey1 = key1.indexOf(currentCharacter);
     //katsoo onko merkki key1 ja korvaa sen
-    if (indexInKey1 !== -1) {
+    if (indexInKey1 >= 0) {
       encryptedArray.push(key2[indexInKey1]);
     } else {
       //jos merkki ei ole key1 se ei muutu
@@ -211,7 +211,7 @@ function deCrypt(deCryptArray, deKey1, deKey2){
   for (let i = 0; i < deCryptArray.length; i++) {
     let currentCharacter = deCryptArray[i];
     let indexInDeKey2 = deKey2.indexOf(currentCharacter);
-    if (indexInDeKey2 !== -1) {
+    if (indexInDeKey2 >= 0) {
       deCryptedArray.push(deKey1[indexInDeKey2]);
     } else {
       deCryptedArray.push(currentCharacter);
