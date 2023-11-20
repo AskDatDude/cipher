@@ -102,21 +102,15 @@ function getKey2Number(){
     return "9"
   }
 }
-//console.log(getKey1Number(keyList[1]));
-//console.log(getKey2Number(keyList[2]));
 
 let userKey = userKey1.toString() + userKey2.toString()
 
 function calculate() {
   let textInput = document.getElementById("textInput").value;
   let inputArray = textInput.split("");
-  //console.log(inputArray);
   let encryptedText = encrypt(inputArray, key1, key2);
-  //console.log(encryptedText);
   document.getElementById("output").innerHTML = encryptedText +"<br>Decryption key is: " + userKey;
 }  
-
-//TO DO täytyy pohtia miten decryptaus onnistuu, jotenkin samalla tavalla kuin tämä, mutta toisinpäin.
 
 function encrypt(inputArray, key1, key2) {
   let encryptedArray = [];
@@ -134,8 +128,97 @@ function encrypt(inputArray, key1, key2) {
   return encryptedArray.join("");
 }  
 
-//kattoo käyttäjän avainnumeron, Purkaa se yksittäisiksi merkeiksi, muuttaa ne avaimeksi. 
 
+function deCryptCalculate(){
+  let deCryptInput = document.getElementById("deCryptTextInput").value;
+  let deCryptionKeyInput = document.getElementById("deCryptKeyInput").value;
+  let deCryptKey = deCryptionKeyInput.split("");
+  let deCryptArray = deCryptInput.split("");
+  let deKey1 = getDeKey1(deCryptKey);
+  let deKey2 = getDeKey2(deCryptKey);
+  let deCryptedText = deCrypt(deCryptArray, deKey1, deKey2);
+  document.getElementById("decryptionOutput").innerHTML = deCryptedText;
+}
+
+function getDeKey1(deCryptKey){
+  if(deCryptKey[0] == 0){
+    return avain0
+  }
+  if(deCryptKey[0] == 1){
+    return avain1
+  }
+  if(deCryptKey[0] == 2){
+    return avain2
+  }
+  if(deCryptKey[0] == 3){
+    return avain3
+  }
+  if(deCryptKey[0] == 4){
+    return avain4
+  }
+  if(deCryptKey[0] == 5){
+    return avain5
+  }
+  if(deCryptKey[0] == 6){
+    return avain6
+  }
+  if(deCryptKey[0] == 7){
+    return avain7
+  }
+  if(deCryptKey[0] == 8){
+    return avain8
+  }
+  if(deCryptKey[0] == 9){
+    return avain9
+  }
+}
+
+function getDeKey2(deCryptKey){
+  if(deCryptKey[1] == 0){
+    return avain0
+  }
+  if(deCryptKey[1] == 1){
+    return avain1
+  }
+  if(deCryptKey[1] == 2){
+    return avain2
+  }
+  if(deCryptKey[1] == 3){
+    return avain3
+  }
+  if(deCryptKey[1] == 4){
+    return avain4
+  }
+  if(deCryptKey[1] == 5){
+    return avain5
+  }
+  if(deCryptKey[1] == 6){
+    return avain6
+  }
+  if(deCryptKey[1] == 7){
+    return avain7
+  }
+  if(deCryptKey[1] == 8){
+    return avain8
+  }
+  if(deCryptKey[1] == 9){
+    return avain9
+  }
+}
+
+function deCrypt(deCryptArray, deKey1, deKey2){
+  let deCryptedArray = [];
+  for (let i = 0; i < deCryptArray.length; i++) {
+    let currentCharacter = deCryptArray[i];
+    let indexInDeKey2 = deKey2.indexOf(currentCharacter);
+    if (indexInDeKey2 !== -1) {
+      deCryptedArray.push(deKey1[indexInDeKey2]);
+    } else {
+      deCryptedArray.push(currentCharacter);
+    }  
+  }  
+  return deCryptedArray.join("");
+}
 
 
 //sama kuin avainBackUp, tämä on vain Durstenfeld shufflea varten
