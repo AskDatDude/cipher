@@ -11,12 +11,12 @@
     <script src="testo.js"></script>
 </head>
 
-<body>
+<body >
     <main>
         <div class="content">
             <h1>Ciphering Tool v.1.0.0</h1>
             <h2 id="inouttxt">Input your message here:</h2>
-            <textarea type="text" id="textInput" name="textInput"></textarea>
+            <textarea  type="text" class="autoresizing" id="textInput" name="textInput"></textarea>
             <br>
             <button onclick="calculate()" class="defaultButton">Cipher Message</button>
             <button onclick="location.href='https://askdatdude.github.io/cipher/decryption.html'"
@@ -32,6 +32,15 @@
             </div>
         </div>
     </main>
+    <script type="text/javascript">
+        textarea = document.querySelector(".autoresizing");
+        textarea.addEventListener('input', autoResize, false);
+ 
+        function autoResize() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        }
+    </script>
 </body>
 
 </html>
