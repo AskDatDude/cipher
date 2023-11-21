@@ -143,8 +143,15 @@ function deCryptCalculate(){
   let deKey1 = getDeKey1(deCryptKey);
   let deKey2 = getDeKey2(deCryptKey);
   let deCryptedText = deCrypt(deCryptArray, deKey1, deKey2);
-  document.getElementById("decryptionOutput").innerHTML = deCryptedText;
+  document.getElementById("deCryptTextInput").value = deCryptedText;
+  document.getElementById("deinouttxt").innerHTML= "Message output here:";
 }
+
+function derestart() {
+  document.getElementById("deCryptTextInput").value = ""
+  document.getElementById("deCryptKeyInput").value = ""
+  document.getElementById("deinouttxt").innerHTML = "Input your ciphered message here::"
+  }
 
 function getDeKey1(deCryptKey){
   if(deCryptKey[0] == 0){
