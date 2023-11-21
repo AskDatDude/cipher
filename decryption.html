@@ -13,10 +13,7 @@
 
 <body>
     <main>
-        <nav>
-
-        </nav>
-        <div>
+        <div class="content">
             <h1>Ciphering Tool v.1.0.0</h1>
             <h2>Input your decryption key here:</h2>
             <input type="password" name="numberInput" id="deCryptKeyInput">
@@ -26,13 +23,13 @@
             <button onclick="deCryptCalculate()" class="defaultButton">Decipher Message</button>
             <button onclick="location.href='https://askdatdude.github.io/cipher'" class="defaultButton">Go to Cipher</button>
             <button onclick="derestart()" class="defaultButton">New Decypher</button>
-            <div>
-                <h2>Output:</h2>
-                <p>Output will be displayed here</p>
-            </div>
-    
+        </div>
+        <h2>Output:</h2>
+        <div class="outputContainer">
+            
+
             <div id="decryptionOutput">
-    
+
             </div>
         </div>
     </main>
