@@ -109,12 +109,12 @@ function calculate() {
   let textInput = document.getElementById("textInput").value;
   let inputArray = textInput.split("");
   let encryptedText = encrypt(inputArray, key1, key2);
-  document.getElementById("textInput").value = encryptedText +"\n\nDecryption key is: " + userKey;
-  document.getElementById("inouttxt").innerHTML = "Message output here:"
+  
+  document.getElementById("decryptionOutput").innerHTML = encryptedText +"<br>Decryption key is: " + userKey;
 } 
 
 function restart() {
-document.getElementById("textInput").value = ""
+document.getElementById("decryptionOutput").innerHTML = ""
 document.getElementById("inouttxt").innerHTML = "Input your message here:"
 }
 
@@ -147,14 +147,12 @@ function deCryptCalculate(){
   let deKey1 = getDeKey1(deCryptKey);
   let deKey2 = getDeKey2(deCryptKey);
   let deCryptedText = deCrypt(deCryptArray, deKey1, deKey2);
-  document.getElementById("deCryptTextInput").value = deCryptedText;
-  document.getElementById("deinouttxt").innerHTML= "Message output here:";
+  document.getElementById("decryptionOutput").innerHTML = deCryptedText;
 }
 
 function derestart() {
   document.getElementById("deCryptTextInput").value = ""
   document.getElementById("deCryptKeyInput").value = ""
-  document.getElementById("deinouttxt").innerHTML = "Input your ciphered message here::"
   }
 
 function getDeKey1(deCryptKey){
