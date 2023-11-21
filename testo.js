@@ -118,6 +118,10 @@ document.getElementById("textInput").value = ""
 document.getElementById("inouttxt").innerHTML = "Input your message here:"
 }
 
+function keystart() {
+location.reload();
+}
+
 function encrypt(inputArray, key1, key2) {
   let encryptedArray = [];
   for (let i = 0; i < inputArray.length; i++) {
