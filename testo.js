@@ -109,8 +109,35 @@ function calculate() {
   let textInput = document.getElementById("textInput").value;
   let inputArray = textInput.split("");
   let encryptedText = encrypt(inputArray, key1, key2);
-  document.getElementById("decryptionOutput").innerHTML = encryptedText +"<br><br>Decryption key is: " + userKey;
-} 
+  let outputElement = document.getElementById("decryptionOutput");
+  outputElement.innerHTML = encryptedText + "<br><br>Decryption key is: " + userKey + "<br><br><a href='#' id='copyLink'>Copy text</a>";
+
+  document.getElementById("copyLink").addEventListener("click", function(event) {
+    copyText(event, outputElement);
+  });
+}
+
+function copyText(event, outputElement) {
+  event.preventDefault(); // Prevents the default behavior of the link (going to a new page)
+
+  let range = document.createRange();
+  range.selectNode(outputElement);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+
+  try {
+    document.execCommand("copy");
+    alert("Text copied successfully!");
+  } catch (err) {
+    alert("Oops, unable to copy the text. Please use Ctrl/Cmd + C to copy.");
+  }
+
+  window.getSelection().removeAllRanges();
+}
+
+
+
+
 
 function keystart() {
 location.reload();
