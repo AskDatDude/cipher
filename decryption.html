@@ -23,9 +23,17 @@
             <h2 id="deinouttxt">Input your ciphered message here:</h2>
             <textarea rows="10" cols="100" type="text" id="deCryptTextInput" name="deCryptTextInput"></textarea>
             <br>
-            <button onclick="deCryptCalculate()">Decipher Message</button>
-            <button onclick="location.href='https://askdatdude.github.io/cipher'">Go to Cipher</button>
+            <button onclick="deCryptCalculate()" class="defaultButton">Decipher Message</button>
+            <button onclick="location.href='https://askdatdude.github.io/cipher'" class="defaultButton">Go to Cipher</button>
             <button onclick="derestart()">New Decypher</button>
+            <div>
+                <h2>Output:</h2>
+                <p>Output will be displayed here</p>
+            </div>
+    
+            <div id="decryptionOutput">
+    
+            </div>
         </div>
     </main>
 </body>

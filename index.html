@@ -9,23 +9,21 @@
     <link rel="shortcut icon" type="image" href="resources/icon.jpg">
     <title>TESTO MONSTER ENCRYTION</title>
     <script src="testo.js"></script>
+    
 </head>
 
 <body>
     <main>
-        <nav>
-
-        </nav>
-        <div>
+        <div id="main">
             <h1>Ciphering Tool v.1.0.0</h1>
             <h2 id="inouttxt">Input your message here:</h2>
             <textarea rows="10" cols="100" type="text" id="textInput" name="textInput"></textarea>
             <br>
-            <button onclick="calculate()">Cipher Message</button>
-            <button onclick="location.href='https://askdatdude.github.io/cipher/decryption.html'">Go to
+            <button onclick="calculate()" class="defaultButton">Cipher Message</button>
+            <button onclick="location.href='https://askdatdude.github.io/cipher/decryption.html'" class="defaultButton">Go to
                 Decipher</button>
-            <button onclick="restart()">New Cypher</button>
-            <button onclick="keystart()">New Key</button>
+            <button onclick="restart()" class="defaultButton">New Cypher</button>
+            <button onclick="keystart()" class="defaultButton">New Key</button>
         </div>
 
     </main>
