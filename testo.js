@@ -145,9 +145,7 @@ function deCryptCalculate(){
 }
 
 function derestart() {
-  document.getElementById("deCryptTextInput").value = ""
-  document.getElementById("deCryptKeyInput").value = ""
-  document.getElementById("decryptionOutput").innerHTML = ""
+  location.reload();
   }
 
 function getDeKey1(deCryptKey){
