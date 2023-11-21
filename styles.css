@@ -94,6 +94,28 @@
         background-color: rgb(29, 29, 29);
     }
 
+    footer {
+        margin: 450px 0 6px 0;
+        font-size: 12px;
+        margin-top: auto 0;
+        text-align: center;
+    }
+
+    footer p {
+        color: #535353;
+    }
+
+    footer a {
+        color: #02C654;
+        text-decoration: none;
+        animation: all 0.5s ease-in-out;
+    }
+
+    footer a:active {
+        
+        font-size: 15px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
