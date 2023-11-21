@@ -109,8 +109,14 @@ function calculate() {
   let textInput = document.getElementById("textInput").value;
   let inputArray = textInput.split("");
   let encryptedText = encrypt(inputArray, key1, key2);
-  document.getElementById("output").innerHTML = encryptedText +"<br>Decryption key is: " + userKey;
-}  
+  document.getElementById("textInput").value = encryptedText +"\n\nDecryption key is: " + userKey;
+  document.getElementById("inouttxt").innerHTML = "Message output here:"
+} 
+
+function restart() {
+document.getElementById("textInput").value = ""
+document.getElementById("inouttxt").innerHTML = "Input your message here:"
+}
 
 function encrypt(inputArray, key1, key2) {
   let encryptedArray = [];
