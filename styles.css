@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Glitch;
+    src: url(resources/GlitchGoblin-2O87v.ttf);
+}
+
+
 * {
     font-family: "Helvetica", Sans-Serif;
     box-sizing: border-box;
@@ -6,9 +12,6 @@
 }
 
 @media screen and (min-width: 340px) {
-
-
-
 
     /*placeholder font, color*/
     body {
@@ -52,7 +55,9 @@
     }
 
     h1 {
+        font-family: Glitch;
         font-size: 42px;
+        color: #c21b16;
         margin: 50px 0 20px 0;
     }
 
