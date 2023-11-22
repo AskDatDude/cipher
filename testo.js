@@ -132,7 +132,8 @@ function encrypt(inputArray, key1, key2) {
   return encryptedArray.join("");
 }  
 
-function deCryptCalculate() {
+
+function deCryptCalculate(){
   let deCryptInput = document.getElementById("deCryptTextInput").value;
   let deCryptionKeyInput = document.getElementById("deCryptKeyInput").value;
   let deCryptKey = deCryptionKeyInput.split("");
@@ -140,42 +141,8 @@ function deCryptCalculate() {
   let deKey1 = getDeKey1(deCryptKey);
   let deKey2 = getDeKey2(deCryptKey);
   let deCryptedText = deCrypt(deCryptArray, deKey1, deKey2);
-  let outputElement = document.getElementById("decryptionOutput");
-  outputElement.innerHTML = deCryptedText + "<br><br><a href='#' id='copyLink'>Copy text</a>";
-
-  let copyLink = document.getElementById("copyLink");
-
-  if (deCryptedText) {
-    copyLink.style.display = "inline-block";
-    copyLink.addEventListener("click", function(event) {
-      copyText(event, outputElement);
-    });
-  } else {
-    copyLink.style.display = "none";
-    copyLink.removeEventListener("click", copyText);
-  }
+  document.getElementById("decryptionOutput").innerHTML = deCryptedText;
 }
-
-function copyText(event, outputElement) {
-  event.preventDefault(); // Prevents the default behavior of the link
-
-  let range = document.createRange();
-  range.selectNode(outputElement);
-  window.getSelection().removeAllRanges();
-  window.getSelection().addRange(range);
-
-  try {
-    document.execCommand("copy");
-    alert("Text copied successfully!");
-  } catch (err) {
-    alert("Oops, unable to copy the text. Please use Ctrl/Cmd + C to copy.");
-  }
-
-  window.getSelection().removeAllRanges();
-}
-
-
-
 
 function derestart() {
   location.reload();
