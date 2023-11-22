@@ -1,6 +1,6 @@
 @font-face {
     font-family: Glitch;
-    src: url(resources/GlitchGoblin-2O87v.ttf);
+    src: url(resources/GlitchGoblin-2O87v.ttf) format("truetype");
 }
 
 
@@ -13,7 +13,6 @@
 
 @media screen and (min-width: 340px) {
 
-    /*placeholder font, color*/
     body {
         background-color: #131313;
         color: #d2d2d2;
@@ -56,7 +55,7 @@
 
     h1 {
         font-family: Glitch;
-        font-size: 42px;
+        font-size: 38px;
         color: #c21b16;
         margin: 50px 0 20px 0;
     }
@@ -66,8 +65,11 @@
         margin: 10px 0 15px 0;
     }
 
-    p,
-    #output {
+    p {
+        font-size: 16px;
+    }
+
+    #decryptionOutput {
         font-size: 16px;
     }
 
@@ -79,10 +81,10 @@
         color: #000000;
         cursor: pointer;
         border: 3px solid;
-        padding: 0.25em 0.5em;
+        padding: 0.4em 0.5em;
         box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
         position: relative;
-        margin: 10px 10px 5px 0;
+        margin: 10px 5px 5px 0;
     }
 
     .defaultButton:active {
@@ -111,7 +113,7 @@
     }
 
     footer a {
-        color: #02C654;
+        color: #c21b16;
         text-decoration: none;
         animation: all 0.5s ease-in-out;
     }
@@ -126,33 +128,46 @@
 @media screen and (min-width: 768px) {
 
     body {
-        margin: 0 25% 0 25%;
-        text-align: start;
+        margin: 0 20% 0 20%;
+        max-width: 100%;
     }
 
 
 
     h1 {
-        font-size: 42px;
+        font-size: 48px;
         margin: 0 0 20px 0;
     }
 
-    h2 {
-        font-size: 26px;
-
+    input[type="text"],
+    textarea {
+        font-size: 18px;
     }
 
-    p,
-    #output {
-        font-size: 16px;
-    }
-
-    .defaultButton {
-        padding: 0.25em 0.75em;
+    #decriptionOutput {
+        font-size: 18px;
     }
 
 }
 
-@media screen and (min-width: 1280px) {}
-
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1280px) {
+    
+    h1 {
+        font-size: 64px;
+        margin: 20px 0 20px 0;
+    } 
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    body {
+        margin: 0 30% 0 30%;
+        max-width: 100%;
+    }
+    
+    .defaultButton {
+        padding: 0.40em 1em;
+        font-size: 18px;
+    }
+}
