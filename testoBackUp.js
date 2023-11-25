@@ -1,3 +1,9 @@
+
+//VARMUUSKOPIO VANHASTA TOIMIVASTA TESTO.JS TIEDOSTOSTA
+
+
+
+
 const avain0 = ['k', '~', 'f', 'I', 'U', 'Ä', 'P', 'z', 'H', 'a', 'S', 'x', 'r', 'F', ']', 'R', '_', 'T', 'u', '8', 'ä', 'N', '+', '`', '&', 'd', '-', 'j', '5', '2', 'L', 'g', '!', 'M', '#', 'Ö', '1', '>', '^', '/', 'w', 'h', '=', '$', '9', 'm', 'c', 'X', ',', '0', 't', '}', 'O', 'q', '<', '[', 'W', 'J', 'K', 'Å', 's', 'Z', 'Y', 'C', 'b', 'V', 'B', 'v', '%', '7', 'D', '(', ':', '6', '?', 'Q', 'e', "'", 'i', 'A', 'å', '"', 'l', 'y', 'E', ';', ')', 'ö', 'p', 'n', '@', 'o', '{', '*', '3', '.', '4', 'G'];
 
 const avain1 = ['1', '_', 'Z', '?', '4', '[', '=', 'ä', 'A', '-', 'L', 't', 'o', '"', 'Ö', 'c', '6', 'l', 'Q', 'd', 'T', '0', 'u', ')', 'q', 'h', '~', 'W', 'Y', 'J', '$', 'I', 'X', '5', '{', '*', '`', 'e', "'", '/', 'a', ',', 'p', '}', 'å', '>', 'M', '7', 'P', 'C', 'k', '9', '@', 'H', 'w', 'U', 'x', 'f', ']', 'R', 'K', 'V', ':', 'D', 'g', 'n', 'Å', 'B', '%', 'z', '+', 'G', '3', '!', '.', 'r', 'O', '<', 'Ä', 's', 'm', 'ö', 'E', ';', '(', 'N', '#', '8', 'S', 'v', 'i', 'F', 'j', '&', '^', 'y', '2', 'b'];
@@ -19,7 +25,6 @@ const avain8 = ['0', 's', '@', 'D', 'o', 'J', 'H', 'd', '4', 'g', '#', 'K', ';',
 const avain9 = ['Y', '~', '?', '-', '2', '1', 'ö', 'ä', '%', '@', '>', 'L', 'a', 'V', 'b', '.', '`', 'D', 'k', '=', '{', ';', ')', 'n', '*', 'Ä', 'r', 'Å', 'A', 't', 'B', 'H', '#', 'W', 'f', 'd', '^', 'O', ',', '9', 'å', 'N', '!', '3', '7', 'e', 'E', 'o', '/', '$', 'y', '<', '0', '8', '(', 'z', 'q', 'g', '4', "'", 'c', ']', 'S', '}', '&', 'l', 'p', 'I', ':', 'x', '_', 'w', 'T', 'h', 'C', 'Q', '6', 'F', '+', '"', 'P', 'M', 'j', 'Ö', 'u', '[', 'i', 'G', 'v', 'U', 's', 'X', 'Z', 'R', 'K', 'J', '5', 'm'];
 
 let keyList = [avain0, avain1, avain2, avain3, avain4, avain5, avain6, avain7, avain8, avain9]
-let keyList2 = [avain0, avain1, avain2, avain3, avain4, avain5, avain6, avain7, avain8, avain9]
 
 shuffleKey(keyList);
 function shuffleKey(keyList) {
@@ -30,119 +35,108 @@ function shuffleKey(keyList) {
     keyList[j] = temp;
   }
 }
+console.log(keyList[1], keyList[2]);
 
-shuffleKey(keyList2);
-function shuffleKey(keyList2) {
-  for (let i = keyList2.length - 1; i > 0; i--) {
-    let j = Math.floor(Math.random() * (i + 1));
-    let temp = keyList2[i];
-    keyList2[i] = keyList2[j];
-    keyList2[j] = temp;
+let key1 = keyList[1];
+let key2 = keyList[2];
+
+let userKey1 = getKey1Number(keyList[1]);
+getKey1Number(keyList[1]);
+function getKey1Number(){
+  if(keyList[1] == avain0){
+    return "0"
+  }
+  else if(keyList[1] == avain1){
+    return "1"
+  }
+  else if(keyList[1] == avain2){
+    return "2"
+  }
+  else if(keyList[1] == avain3){
+    return "3"
+  }
+  else if(keyList[1] == avain4){
+    return "4"
+  }
+  else if(keyList[1] == avain5){
+    return "5"
+  }
+  else if(keyList[1] == avain6){
+    return "6"
+  }
+  else if(keyList[1] == avain7){
+    return "7"
+  }
+  else if(keyList[1] == avain8){
+    return "8"
+  }
+  else if(keyList[1] == avain9){
+    return "9"
+  }
+}
+let userKey2 = getKey2Number(keyList[2]);
+getKey2Number(keyList[2]);
+function getKey2Number(){
+  if(keyList[2] == avain0){
+    return "0"
+  }
+  else if(keyList[2] == avain1){
+    return "1"
+  }
+  else if(keyList[2] == avain2){
+    return "2"
+  }
+  else if(keyList[2] == avain3){
+    return "3"
+  }
+  else if(keyList[2] == avain4){
+    return "4"
+  }
+  else if(keyList[2] == avain5){
+    return "5"
+  }
+  else if(keyList[2] == avain6){
+    return "6"
+  }
+  else if(keyList[2] == avain7){
+    return "7"
+  }
+  else if(keyList[2] == avain8){
+    return "8"
+  }
+  else if(keyList[2] == avain9){
+    return "9"
   }
 }
 
-
-let userKey = getKeyNumber(keyList);
-let userKey2 = getKey2Number(keyList2);
-function getKeyNumber() {
-  let keyListStr = [];
-  for (let i = 0; i < keyList.length; i++) {
-    if (keyList[i] == avain0) {
-      keyListStr.push("0");
-    }
-    else if (keyList[i] == avain1) {
-      keyListStr.push("1");
-    }
-    else if (keyList[i] == avain2) {
-      keyListStr.push("2");
-    }
-    else if (keyList[i] == avain3) {
-      keyListStr.push("3");
-    }
-    else if (keyList[i] == avain4) {
-      keyListStr.push("4");
-    }
-    else if (keyList[i] == avain5) {
-      keyListStr.push("5");
-    }
-    else if (keyList[i] == avain6) {
-      keyListStr.push("6");
-    }
-    else if (keyList[i] == avain7) {
-      keyListStr.push("7");
-    }
-    else if (keyList[i] == avain8) {
-      keyListStr.push("8");
-    }
-    else if (keyList[i] == avain9) {
-      keyListStr.push("9");
-    }
-  }
-  return keyListStr.join("");
-}
-
-function getKey2Number() {
-  let keyList2Str = [];
-  for (let i = 0; i < keyList2.length; i++) {
-    if (keyList2[i] == avain0) {
-      keyList2Str.push("0");
-    }
-    else if (keyList2[i] == avain1) {
-      keyList2Str.push("1");
-    }
-    else if (keyList2[i] == avain2) {
-      keyList2Str.push("2");
-    }
-    else if (keyList2[i] == avain3) {
-      keyList2Str.push("3");
-    }
-    else if (keyList2[i] == avain4) {
-      keyList2Str.push("4");
-    }
-    else if (keyList2[i] == avain5) {
-      keyList2Str.push("5");
-    }
-    else if (keyList2[i] == avain6) {
-      keyList2Str.push("6");
-    }
-    else if (keyList2[i] == avain7) {
-      keyList2Str.push("7");
-    }
-    else if (keyList2[i] == avain8) {
-      keyList2Str.push("8");
-    }
-    else if (keyList2[i] == avain9) {
-      keyList2Str.push("9");
-    }
-  }
-  return keyList2Str.join("");
-}
+let userKey = userKey1.toString() + userKey2.toString()
 
 function calculate() {
   let textInput = document.getElementById("textInput").value;
   let inputArray = textInput.split("");
-  let encryptedText = encrypt(inputArray, keyList, keyList2);
-  document.getElementById("decryptionOutput").innerHTML = encryptedText + "<br><br>Decryption key is: " + userKey.toString() + userKey2.toString();
-}
+  let encryptedText = encrypt(inputArray, key1, key2);
+  document.getElementById("decryptionOutput").innerHTML = encryptedText +"<br><br>Decryption key is: " + userKey;
+} 
 
 function keystart() {
-  location.reload();
+location.reload();
 }
 
-function encrypt(inputArray, keyList, keyList2) {
+function encrypt(inputArray, key1, key2) {
   let encryptedArray = [];
   for (let i = 0; i < inputArray.length; i++) {
-    let index = i % 10;
     let currentCharacter = inputArray[i];
-    let indexInKey = keyList[index].indexOf(currentCharacter);
-    if (indexInKey >= 0) {
-      encryptedArray.push(keyList2[index][indexInKey]);
+    let indexInKey1 = key1.indexOf(currentCharacter);
+    //katsoo onko merkki key1 ja korvaa sen
+    if (indexInKey1 >= 0) {
+      encryptedArray.push(key2[indexInKey1]);
     } else {
+      //jos merkki ei ole key1 se ei muutu
       encryptedArray.push(currentCharacter);
-    }
-  }
+    }  
+  }  
   return encryptedArray.join("");
-}
+}  
 
 
 function deCryptCalculate(){
@@ -158,96 +152,85 @@ function deCryptCalculate(){
 
 function derestart() {
   location.reload();
+  }
+
+function getDeKey1(deCryptKey){
+  if(deCryptKey[0] == 0){
+    return avain0
+  }
+  if(deCryptKey[0] == 1){
+    return avain1
+  }
+  if(deCryptKey[0] == 2){
+    return avain2
+  }
+  if(deCryptKey[0] == 3){
+    return avain3
+  }
+  if(deCryptKey[0] == 4){
+    return avain4
+  }
+  if(deCryptKey[0] == 5){
+    return avain5
+  }
+  if(deCryptKey[0] == 6){
+    return avain6
+  }
+  if(deCryptKey[0] == 7){
+    return avain7
+  }
+  if(deCryptKey[0] == 8){
+    return avain8
+  }
+  if(deCryptKey[0] == 9){
+    return avain9
+  }
 }
 
-function getDeKey1(deCryptKey) {
-  let dkeyList1 = [];
-  let deCryptKeyFirst10 = deCryptKey.slice(0, 10);
-  for (let i = 0; i < deCryptKeyFirst10.length; i++) {
-    if (deCryptKeyFirst10[i] == 0) {
-      dkeyList1.push(avain0);
-    }
-    else if (deCryptKeyFirst10[i] == 1) {
-      dkeyList1.push(avain1);
-    }
-    else if (deCryptKeyFirst10[i] == 2) {
-      dkeyList1.push(avain2);
-    }
-    else if (deCryptKeyFirst10[i] == 3) {
-      dkeyList1.push(avain3);
-    }
-    else if (deCryptKeyFirst10[i] == 4) {
-      dkeyList1.push(avain4);
-    }
-    else if (deCryptKeyFirst10[i] == 5) {
-      dkeyList1.push(avain5);
-    }
-    else if (deCryptKeyFirst10[i] == 6) {
-      dkeyList1.push(avain6);
-    }
-    else if (deCryptKeyFirst10[i] == 7) {
-      dkeyList1.push(avain7);
-    }
-    else if (deCryptKeyFirst10[i] == 8) {
-      dkeyList1.push(avain8);
-    }
-    else if (deCryptKeyFirst10[i] == 9) {
-      dkeyList1.push(avain9);
-    }
+function getDeKey2(deCryptKey){
+  if(deCryptKey[1] == 0){
+    return avain0
   }
-  return dkeyList1;
-}
-
-function getDeKey2(deCryptKey) {
-  let dkeyList2 = [];
-  let deCryptKeyLast10 = deCryptKey.slice(-10);
-  for (let i = 0; i < deCryptKeyLast10.length; i++) {
-    if (deCryptKeyLast10[i] == 0) {
-      dkeyList2.push(avain0);
-    }
-    else if (deCryptKeyLast10[i] == 1) {
-      dkeyList2.push(avain1);
-    }
-    else if (deCryptKeyLast10[i] == 2) {
-      dkeyList2.push(avain2);
-    }
-    else if (deCryptKeyLast10[i] == 3) {
-      dkeyList2.push(avain3);
-    }
-    else if (deCryptKeyLast10[i] == 4) {
-      dkeyList2.push(avain4);
-    }
-    else if (deCryptKeyLast10[i] == 5) {
-      dkeyList2.push(avain5);
-    }
-    else if (deCryptKeyLast10[i] == 6) {
-      dkeyList2.push(avain6);
-    }
-    else if (deCryptKeyLast10[i] == 7) {
-      dkeyList2.push(avain7);
-    }
-    else if (deCryptKeyLast10[i] == 8) {
-      dkeyList2.push(avain8);
-    }
-    else if (deCryptKeyLast10[i] == 9) {
-      dkeyList2.push(avain9);
-    }
+  if(deCryptKey[1] == 1){
+    return avain1
   }
-  return dkeyList2;
+  if(deCryptKey[1] == 2){
+    return avain2
+  }
+  if(deCryptKey[1] == 3){
+    return avain3
+  }
+  if(deCryptKey[1] == 4){
+    return avain4
+  }
+  if(deCryptKey[1] == 5){
+    return avain5
+  }
+  if(deCryptKey[1] == 6){
+    return avain6
+  }
+  if(deCryptKey[1] == 7){
+    return avain7
+  }
+  if(deCryptKey[1] == 8){
+    return avain8
+  }
+  if(deCryptKey[1] == 9){
+    return avain9
+  }
 }
 
 function deCrypt(deCryptArray, deKey1, deKey2){
   let deCryptedArray = [];
   for (let i = 0; i < deCryptArray.length; i++) {
-    let index = i % 10;
     let currentCharacter = deCryptArray[i];
-    let indexInDeKey2 = deKey2[index].indexOf(currentCharacter);
+    let indexInDeKey2 = deKey2.indexOf(currentCharacter);
     if (indexInDeKey2 >= 0) {
-      deCryptedArray.push(deKey1[index][indexInDeKey2]);
+      deCryptedArray.push(deKey1[indexInDeKey2]);
     } else {
       deCryptedArray.push(currentCharacter);
-    }
-  }
+    }  
+  }  
   return deCryptedArray.join("");
 }
 
@@ -273,7 +256,7 @@ function shuffleArray(array) {
 console.log(array);
 */
 
-/*
+/*  
 const avainBackUp = [
     "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "å", "ä", "ö",
     "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "Å", "Ä", "Ö",
@@ -282,4 +265,4 @@ const avainBackUp = [
   ];
   */
 
-//Frontti JavaScriptiä tästä eteenpäin
+  //Frontti JavaScriptiä tästä eteenpäin
