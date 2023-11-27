@@ -129,6 +129,7 @@ function calculate() {
 
 function keystart() {
   location.reload();
+  document.getElementById("textInput").value = "";
 }
 
 function encrypt(inputArray, keyList, keyList2) {
@@ -160,6 +161,7 @@ function deCryptCalculate() {
 
 function derestart() {
   location.reload();
+  document.getElementById("deCryptTextInput").value = "";
 }
 
 function getDeKey1(deCryptKey) {
